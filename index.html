@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>W3D4</title>
+  </head>
+  <body>
+    <!-- Make 3 col -->
+    <!-- <div class="container"> -->
+    <nav>
+      <div class="row g-0">
+        <a href ="https://sv443.net/jokeapi/v2/" class="col-sm-5 bg-dark
+        p-2 text-light text-decoration-none">API Joke!</a>
+
+        <a href ="https://www.google.com/" class="col-sm-5 bg-danger p-2 text-light text-decoration-none">Introduction</a>
+
+        <a href ="https://www.youtube.com/watch?v=dZsDkOEc2uI" class="col-sm-2 bg-warning p-2 text-light text-decoration-none">Amazing Things</a>
+      <!-- </div> -->
+      </div>
+    </nav>
+    <div class="content d-flex flex-column align-items-center">
+      <div class="type-of-joke ">
+        <!-- make a title -->
+        <div class="title">Type of Joke:</div>
+
+        <!-- Make a RadioCheckBox -->
+        <div class="radioCheckBox">
+          <!-- <form class="category"> -->
+            <input type="radio"  class="category" name="chooseJoke" value="Programming"  />
+            <label for="Programing">Programing</label>
+    
+            <input type="radio" class="category"  name="chooseJoke" value="Dark"/>
+            <label for="Dark">Dark</label>
+
+            <input type="radio" class="category" name="chooseJoke" value="Pun" />
+            <label for="Pun">Pun</label>
+
+            <input type="radio" class="category" name="chooseJoke" value="Christmas" />
+            <label for="Christmas">Christmas</label>
+          <!-- </form> -->
+        </div>
+      </div>
+      <!-- <div class="d-flex flex-column align-items-center"> -->
+        <button class="btn btn-danger" id="joke-btn" onclick="getJoke()">Tell me a joke.</button>
+        </button>
+      </div>
+    </div>
+    <div id="result"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>

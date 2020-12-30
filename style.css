@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+
+.type-of-joke {
+  border: 1px dashed black;
+  padding: 10px;
+  margin: auto;
+  border-radius: 010px;
+}
+.content {
+  max-width: 1140px;
+  padding: 30px;
+  margin: 0 auto;
+}
